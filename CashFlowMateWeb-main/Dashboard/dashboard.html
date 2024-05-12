@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CASHFLOWMATE | DASHBOARD</title>
+
+    <!--! Icons -->
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp"
+      rel="stylesheet"
+    />
+    <!--! Css -->
+    <link rel="stylesheet" href="./Css/style.css" />
+    <!--! Favicon -->
+    <link rel="icon" href="../assests/icon/titleicon.png" />
+  </head>
+  <body>
+    <div class="container">
+      <aside>
+        <div class="top">
+          <div class="logo">
+            <img src="../assests/logo/logo.png" alt="Logo" />
+            <h2>CF<span class="danger">MATE</span></h2>
+          </div>
+          <div class="close" id="close-btn">
+            <span class="material-icons-sharp"> close </span>
+          </div>
+        </div>
+
+        <div class="sidebar">
+          <a href="../home.html">
+            <span class="material-icons-sharp"> home </span>
+            <h3>Home</h3>
+          </a>
+          <a href="#" class="active">
+            <span class="material-icons-sharp"> dashboard </span>
+            <h3>Dashboard</h3>
+          </a>
+          <a href="../Report/Report.html">
+            <span class="material-icons-sharp"> insights </span>
+            <h3>Reports</h3>
+          </a>
+          <a href="../Budget/Budget.html">
+            <span class="material-icons-sharp"> inventory </span>
+            <h3>Budget</h3>
+          </a>
+          <a href="../index.html">
+            <span class="material-icons-sharp"> logout </span>
+            <h3>Logout</h3>
+          </a>
+        </div>
+      </aside>
+
+      <main>
+        <h1>Dashboard</h1>
+
+        <div class="date">
+          <input type="date" />
+        </div>
+
+        <div class="insights">
+          <!-- SALES -->
+          <div class="sales">
+            <span class="material-icons-sharp"> analytics </span>
+            <div class="middle">
+              <div class="left">
+                <h3>Total Budget</h3>
+                <h1>Rs: 700000</h1>
+              </div>
+              <div class="progress">
+                <svg>
+                  <circle cx="38" cy="38" r="36"></circle>
+                </svg>
+                <div class="number">
+                  <p>81%</p>
+                </div>
+              </div>
+            </div>
+            <small class="text-muted"> Last 30 Days </small>
+          </div>
+
+          <!-- EXPENSES -->
+          <div class="expenses">
+            <span class="material-icons-sharp"> bar_chart </span>
+            <div class="middle">
+              <div class="left">
+                <h3>Total Expenses</h3>
+                <h1>Rs: 615000</h1>
+              </div>
+              <div class="progress">
+                <svg>
+                  <circle cx="38" cy="38" r="36"></circle>
+                </svg>
+                <div class="number">
+                  <p>62%</p>
+                </div>
+              </div>
+            </div>
+            <small class="text-muted"> Last 30 Days </small>
+          </div>
+
+          <!-- BALANCE -->
+          <div class="balance">
+            <span class="material-icons-sharp"> stacked_line_chart </span>
+            <div class="middle">
+              <div class="left">
+                <h3>Balance</h3>
+                <h1>Rs: 85000</h1>
+              </div>
+              <div class="progress">
+                <svg>
+                  <circle cx="38" cy="38" r="36"></circle>
+                </svg>
+                <div class="number">
+                  <p>44%</p>
+                </div>
+              </div>
+            </div>
+            <small class="text-muted"> Last 30 Days </small>
+          </div>
+        </div>
+
+        <div class="expenses-list">
+          <h2>Recent Expenses</h2>
+          <table id="expenses--table">
+            <thead>
+              <tr>
+                <th>Expenses Title</th>
+                <th>Expenses Amount</th>
+                <th>Type</th>
+                <th>Status</th>
+                <th></th>
+              </tr>
+            </thead>
+            <!-- Add tbody here | JS insertion -->
+          </table>
+          <a href="#">Show All</a>
+        </div>
+      </main>
+
+      <div class="right">
+        <div class="top">
+          <button id="menu-btn">
+            <span class="material-icons-sharp"> menu </span>
+          </button>
+          <div class="theme-toggler">
+            <span class="material-icons-sharp active"> light_mode </span>
+            <span class="material-icons-sharp"> dark_mode </span>
+          </div>
+          <div class="profile">
+            <div class="info">
+              <p>Hey, <b>Maria</b></p>
+              <small class="text-muted">Admin</small>
+            </div>
+            <div class="profile-photo">
+              <img src="../assests/img/user/client.jpg" alt="Profile Picture" />
+            </div>
+          </div>
+        </div>
+
+        <div class="recent-updates">
+          <h2>Recent Updates</h2>
+          <!-- Add updates div here | JS insertion -->
+        </div>
+
+        <div class="analytics">
+          <h2>Analytics</h2>
+          <div id="analytics">
+            <!-- Add items div here | JS insertion -->
+          </div>
+          <div class="item add-product">
+            <div>
+              <span class="material-icons-sharp"> add </span>
+              <h3>Add Transaction</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="./Js/expenses.js"></script>
+    <script  src="./Js/constants.js"></script>
+    <script src="./Js/analytics.js"></script>
+    <script src="./Js/index.js"></script>
+  </body>
+</html>

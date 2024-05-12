@@ -1,0 +1,129 @@
+<head>
+    <link rel="icon" href="assests/icon/titleicon.png" />
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+  <link rel="stylesheet" href="Css/Home.css">
+  <title>CASHFLOWMATE | HOME</title>
+</head>
+
+<body>
+  <nav>
+      <div class="container nav__container">
+          <a href="index.html">
+              <h4>CASHFLOWMATE</h4>
+          </a>
+          <ul class="nav__menu">
+            <li><a href="home.html">Home</a></li>
+            <li><a href="Dashboard/dashboard.html">Dashboard</a></li>
+            <li><a href="Budget/Budget.html">BAPP</a></li>
+            <li><a href="Report/Report.html">Reports</a></li>
+            <li><a href="index.html">Logout</a></li>
+          </ul>
+
+          <button id="open-menu-btn"><i class="uil uil-bars"></i></button>
+          <button id="close-menu-btn"><i class="uil uil-multiply"></i></button>
+      </div>
+  </nav>
+  <!----==================== HOME ====================-->
+
+  <header>
+      <div class="container header__container">
+          <div class="header__left">
+              <h1>WELCOME TO CASHFLOWMATE</h1>
+              <p>Cashflowmate is your 
+                  personal finance manager. 
+                  It helps you track your income and expenses, 
+                  set budgets and save money. 
+                  Cashflowmate is a free and open-source project 
+                  developed by a team of volunteers from all over the world. 
+                  We are not affiliated with any bank or financial institution. 
+                  Our goal is to make personal finance management easy, 
+                  accessible and fun!
+              </p>
+              <a href="Budget/Budget.html" class="btn btn-primary">Get Started</a>
+          </div>
+          <div class="header__right">
+              <div class="header__right__img">
+                  <img src="assests/img/HeroImage-.png">
+              </div>
+          </div>
+      </div>
+  </header>
+
+  <!----=================== HOME CATEGORIES ===================-->
+
+  <section class="categories">
+      <div class="container categories__container">
+          <div class="categories__left">
+              <h1>Categories</h1>
+              <p>
+                We have wide range of option to manage your financial status
+                its easy to use and help you to manage easily.
+                   </p>
+              <a href="Dashboard/dashboard.html" class="btn">View All</a>
+          </div>
+          <div class="categories__right">
+              <article class="category">
+                  <span class="catogory__icon"><i class="uil uil-money-withdraw"></i></span>
+                  <h5>Expenses Tracker</h5>
+                  <p>
+                    Track your expenses and income, categorize them for better
+                    organization and get a clear picture of your financial life.
+                  </p>
+              </article>
+              <article class="category">
+                  <span class="catogory__icon"><i class="uil uil-money-bill"></i></span>
+                  <h5>Budget Handler</h5>
+                  <p>
+                    Set budgets that are easy to stick to, based on your own
+                    spending habits. You can also set up budget goals and get
+                    notifications when you’re close to reaching them.
+                  </p>
+              </article>
+              <article class="category">
+                  <span class="catogory__icon"><i class="uil uil-analysis"></i></span>
+                  <h5>Analizer</h5>
+                  <p>
+                    Analyze your spending patterns and get detailed reports
+                    about your finances, income by source, spending by category
+                    and more.
+                  </p>
+              </article>              
+          </div>
+      </div>
+  </section>  
+<!--==================== SCROLL TOP ====================-->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+  <script src="Js/home.js"></script>
+
+
+  <script>
+      var swiper = new Swiper(".mySwiper", {
+          slidesPerView: 1,
+          spaceBetween: 30,
+          pagination: {
+              el: ".swiper-pagination",
+              clickable: true,
+          },
+          breakpoints: {
+              640: {
+                  slidesPerView: 2,
+                  spaceBetween: 20,
+              },
+              768: {
+                  slidesPerView: 3,
+                  spaceBetween: 40,
+              },
+              1024: {
+                  slidesPerView: 1,
+                  spaceBetween: 50,
+              },
+          },
+      });
+  </script>
+</body>
+
+</html>
